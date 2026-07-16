@@ -72,6 +72,7 @@ run.bat debug
 - `VISION_PROVIDER`: Primary vision provider (`anthropic` or `openai`).
 - `FALLBACK_PROVIDER`: Optional fallback provider.
 - `LOG_LEVEL`: Logging level (DEBUG, INFO, WARNING, ERROR).
+- `MAX_TOKENS`: Maximum number of tokens generated in a vision response (default: `1024`).
 - `ENABLE_OCR`: Enable Tesseract OCR text extraction (`true` or `false`).
 - `TESSERACT_CMD`: Optional custom path to Tesseract executable.
 - `OPENAI_MODEL`: OpenAI Model (default: `gpt-4o-mini`). Can use OpenRouter format for other models (e.g., `anthropic/claude-3.5-sonnet:beta`).

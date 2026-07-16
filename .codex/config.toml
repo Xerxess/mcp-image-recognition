@@ -1,0 +1,14 @@
+[mcp_servers.mcp-vision-recognition]
+command = "uvx"
+args = ["mcp-vision-recognition"]
+
+[mcp_servers.mcp-vision-recognition.env]
+ANTHROPIC_API_KEY = "ollama"
+ANTHROPIC_BASE_URL = "http://localhost:11434"
+ANTHROPIC_TARGET_API_URL = "http://localhost:11434"
+ANTHROPIC_MODEL = "minimax-m3:cloud"
+VISION_PROVIDER = "anthropic"
+MAX_TOKENS = "8090"
+
+[mcp_servers.mcp-vision-recognition.tools.describe_image_from_file]
+approval_mode = "approve"

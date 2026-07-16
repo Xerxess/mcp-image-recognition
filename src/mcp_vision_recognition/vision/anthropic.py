@@ -5,6 +5,8 @@ from typing import Optional
 from anthropic import Anthropic, APIConnectionError, APIError, APITimeoutError
 from anthropic.types import ImageBlockParam, MessageParam, TextBlockParam
 
+from ..utils.config import get_max_tokens
+
 logger = logging.getLogger(__name__)
 
 
@@ -64,7 +66,7 @@ class AnthropicVision:
 
             # Make API call
             response = self.client.messages.create(
-                model=model, max_tokens=1024, messages=messages
+                model=model, max_tokens=get_max_tokens(), messages=messages
             )
 
             # Extract text from content blocks

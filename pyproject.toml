@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mcp-vision-recognition"
-version = "0.1.1"
+version = "0.1.2"
 description = "MCP server for image recognition using Anthropic and OpenAI vision APIs"
 authors = [{ name = "Mario" }]
 readme = "README.md"

@@ -5,6 +5,8 @@ from typing import Optional
 from openai import (APIConnectionError, APIError, APITimeoutError, AsyncOpenAI,
                     RateLimitError)
 
+from ..utils.config import get_max_tokens
+
 logger = logging.getLogger(__name__)
 
 
@@ -65,7 +67,7 @@ class OpenAIVision:
                         ],
                     }
                 ],
-                max_tokens=1024,
+                max_tokens=get_max_tokens(),
             )
 
             # Extract and return description

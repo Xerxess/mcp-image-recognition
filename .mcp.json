@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "mcp-vision-recognition": {
+      "args": [
+        "mcp-vision-recognition"
+      ],
+      "command": "uvx",
+      "env": {
+        "ANTHROPIC_API_KEY": "ollama",
+        "ANTHROPIC_BASE_URL": "http://localhost:11434",
+        "ANTHROPIC_MODEL": "minimax-m3:cloud",
+        "VISION_PROVIDER": "anthropic",
+        "MAX_TOKENS": "8090"
+      }
+    }
+  }
+}

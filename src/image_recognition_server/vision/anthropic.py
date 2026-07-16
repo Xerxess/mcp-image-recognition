@@ -21,7 +21,8 @@ class AnthropicVision:
                 "Anthropic API key not provided and not found in environment"
             )
 
-        self.client = Anthropic(api_key=self.api_key)
+        base_url = os.getenv("ANTHROPIC_BASE_URL")
+        self.client = Anthropic(api_key=self.api_key, base_url=base_url)
 
     def describe_image(
         self,

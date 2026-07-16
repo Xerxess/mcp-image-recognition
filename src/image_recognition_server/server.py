@@ -47,7 +47,7 @@ def sanitize_output(text: str) -> str:
 # Create MCP server
 mcp = FastMCP(
     "mcp-image-recognition",
-    description="MCP server for image recognition using Anthropic and OpenAI vision APIs",
+    instructions="MCP server for image recognition using Anthropic and OpenAI vision APIs",
 )
 
 

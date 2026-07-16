@@ -46,7 +46,7 @@ def sanitize_output(text: str) -> str:
 
 # Create MCP server
 mcp = FastMCP(
-    "mcp-image-recognition",
+    "mcp-vision-recognition",
     instructions="MCP server for image recognition using Anthropic and OpenAI vision APIs",
 )
 
@@ -198,5 +198,10 @@ async def describe_image_from_file(
         raise
 
 
-if __name__ == "__main__":
+def main():
+    """Entry point for the MCP image recognition server."""
     mcp.run()
+
+
+if __name__ == "__main__":
+    main()
